@@ -63,25 +63,7 @@
 .topbar-right a:hover {
   color: #FFD43B;
 }
-/* Mobile */
-@media (max-width: 768px) {
-  .topbar {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-    gap: 8px;
-    text-align: center;
-  }
 
-  .topbar-left {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .topbar-right {
-    justify-content: center;
-  }
-}
 
 
 .navbar {
@@ -835,4 +817,278 @@
 
 .register-btn:hover {
   background: #6b1430;
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+/* Tablet */
+@media (max-width:992px){
+
+/* Navbar */
+.navbar{
+    flex-wrap:wrap;
+    height:auto;
+    padding:15px 20px;
+    gap:20px;
+}
+
+.navbar-left,
+.navbar-right{
+    flex:100%;
+    justify-content:center;
+}
+
+.logo-text{
+    text-align:center;
+}
+
+.navbar-menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+/* Hero */
+
+.herosection{
+    flex-direction:column;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.herocenter h2{
+    font-size:42px;
+}
+
+.herocenter h3{
+    font-size:30px;
+}
+
+.hero-right{
+    width:100%;
+    max-width:360px;
+}
+
+/* Mission */
+
+.mission-section{
+    flex-direction:column;
+}
+
+.mission-card,
+.activity-section,
+.strength-card{
+    width:100%;
+}
+
+.activity-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+/* Feature */
+
+.feature-section{
+    flex-wrap:wrap;
+}
+
+.feature-item{
+    flex:0 0 calc(50% - 10px);
+}
+
+.feature-item::after{
+    display:none;
+}
+
+/* Footer */
+
+.footer{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+    width:100%;
+}
+
+.footer-center,
+.footer-right{
+    justify-content:center;
+}
+
+.join-card,
+.contact-card{
+    width:100%;
+    max-width:400px;
+}
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+.topbar{
+    padding:10px;
+}
+
+.navbar{
+    padding:15px;
+}
+
+.logo{
+    width:50px;
+    height:50px;
+}
+
+.logo-text h2{
+    font-size:18px;
+}
+
+.logo-text p{
+    font-size:12px;
+}
+
+.navbar-menu{
+    gap:12px;
+}
+
+.navbar-menu li a{
+    font-size:14px;
+}
+
+.join-btn{
+    padding:10px 18px;
+    font-size:14px;
+}
+
+/* Hero */
+
+.herosection{
+    padding:30px 15px;
+}
+
+.herocenter h2{
+    font-size:32px;
+}
+
+.herocenter h3{
+    font-size:24px;
+}
+
+.leaders{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.leaders img{
+    width:55px;
+    height:65px;
+}
+
+.leader-card h2{
+    font-size:28px;
+}
+
+.leader-card h4{
+    font-size:18px;
+}
+
+.leader-card p{
+    font-size:14px;
+}
+
+/* Activities */
+
+.activity-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Feature */
+
+.feature-item{
+    flex:100%;
+    text-align:center;
+}
+
+.feature-top{
+    justify-content:center;
+}
+
+.feature-item p{
+    margin-left:0;
+}
+
+/* Mission */
+
+.mission-card,
+.strength-card{
+    padding:25px;
+}
+
+.mission-card h2{
+    font-size:18px;
+}
+
+/* Footer */
+
+.footer-overlay h1{
+    font-size:22px;
+}
+
+.footer-overlay h2{
+    font-size:16px;
+}
+
+.join-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact-item{
+    justify-content:center;
+}
+
+}
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.activity-grid{
+    grid-template-columns:1fr;
+}
+
+.herocenter h2{
+    font-size:26px;
+}
+
+.herocenter h3{
+    font-size:20px;
+}
+
+.join-btn{
+    width:100%;
+    justify-content:center;
+}
+
+.navbar-menu{
+    flex-direction:column;
+    gap:10px;
+}
+
+.join-card,
+.contact-card{
+    padding:15px;
+}
+
+.register-modal{
+    width:95%;
+    padding:20px;
+}
+
 }
