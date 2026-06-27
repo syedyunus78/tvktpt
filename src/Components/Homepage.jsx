@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import "./Homepage.css";
 import tvklogo  from "../images/51qh+14OaWL._SY575_.jpg"
 import {
-  FaBullhorn,
+
   FaFlag,
   FaUsers,
   FaHandshake,
@@ -23,33 +23,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 const Homepage = () => {
 const [showLogin, setShowLogin] = useState(false);
-   const features = [
-    {
-      icon: <FaUsers />,
-      title: "மக்கள் நலன்",
-      subtitle: "எங்கள் முதன்மை",
-    },
-    {
-      icon: <FaHandshake />,
-      title: "சமூக சேவை",
-      subtitle: "எங்கள் கடமை",
-    },
-    {
-      icon: <FaFlag />,
-      title: "தமிழ வெற்றி",
-      subtitle: "எங்கள் இலக்கு",
-    },
-    {
-      icon: <FaStar />,
-      title: "இளைஞர் எழுச்சி",
-      subtitle: "எங்கள் பலம்",
-    },
-    {
-      icon: <FaDove />,
-      title: "நேர்மை · நம்பிக்கை",
-      subtitle: "எங்கள் கொள்கை",
-    },
-  ];
+  
 const [language, setLanguage] = useState("ta");
   return (
   <>
